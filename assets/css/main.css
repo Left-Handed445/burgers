@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #191411;
+    font-family: 'Gilroy', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.button {
+    border-radius: 8px;
+    background: linear-gradient(135deg, #DA8023 0%, #E2B438 100%);
+    width: 260px;
+    height: 62px;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Вырвнивание текста по горизонтали */
+    align-items: center;    /* Вырвнивание текста по вертикали */
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    color: #191411;
+}
+.button:hover {
+    background: linear-gradient(135deg, #ac6115 0%, #9e7a19 100%);
+}
+.main {
+    overflow: hidden;
+    background-image: url('../img/main_bg.png');
+    background-position: top center; /* по вертикали - вверх, по горизонтали - центр */
+    background-size: cover;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf');
+}
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Black.ttf');
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+
+}
+.header__menu {
+    margin-left: 191px;
+}
+.header__menu-list {
+    list-style-type: none;
+    display: flex;
+}
+.header__menu-list-item {
+    margin-right: 88px;
+}
+.header__menu-list-item a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header__menu-list-item a:hover {
+    border-bottom: 2px solid white;
+}
+.currency {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    padding: 12px 0px 12px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+    user-select: none; /* Чтобы нельзя было выделять текст */
+}
+.logo img {
+    vertical-align: bottom;
+}
+
+
+.main-content {
+    padding: 100px 0px 200px 0px;
+}
+.main-content .container {
+    position: relative;
+}
+.main-info {
+    max-width: 608px;
+}
+.main-small-info {
+    border-radius: 100px;
+    background-color: #D3320F;
+    padding: 12px 16px;
+    display: inline-block;
+    font-size: 18px;
+}
+.main-title {
+    font-weight: 900;
+    font-size: 120px;
+    font-family: Merriweather, sans-serif;
+    text-transform: uppercase;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    margin-bottom: 56px;
+}
+.main-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 56px;
+}
+.main-img {
+    position: absolute;
+    top: -123px;
+    left: calc(100% - 991px);
+}
+
+
+.why {
+    background-image: url('../img/whybg.png');
+    background-position: top center;
+    background-size: initial;
+    padding-bottom: 180px;
+}
+.why-title {
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Merriweather;
+    text-align: center;
+    letter-spacing: 1.92px;
+    padding-bottom: 60px;
+}
+.why-items {
+    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+.why-item {
+    text-align: center;
+}
+.why-item-title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 24px 0;
+}
+.why-item-text {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
+.products {
+    background-image: url(../img/burgers_bg.png);
+    background-position: top center;
+    background-size: 1400px;
+    padding-bottom: 180px;
+}
+
+.products-title {
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: Merriweather;
+    text-align: center;
+    letter-spacing: 1.92px;
+    padding-bottom: 60px;
+}
+.products-items {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 24px;
+}
+.products-item {
+    padding: 30px;
+    background-color: #211A16;
+    border-radius: 16px;
+    border: 1px solid #353535;
+
+}
+.products-item-img {
+    height: 250px;
+}
+.products-item-img img {
+    max-width: 100%;
+}
+.products-item-title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 24px 0;
+}
+.products-item-text {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.products-item-extra {
+    display: flex;
+    justify-content: space-between;
+}
+.products-item-price {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.products-item-weight {
+    font-size: 16px;
+    line-height: 18px;
+    color: #757575;
+}
+
+.button.product-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    height: 62px;
+}
+
+.button.product-button span:first-child {
+    margin-right: 10px;
+}
+
+
+.order {
+    background-image: url('../img/order_bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+.order .container {
+    position: relative;
+}
+
+.order-img {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+.order-form {
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+    max-width: 426px;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    margin-left: 674px;
+}
+.order-form-text {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.order-form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form-input {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    width: 344px;
+    height: 62px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-form-input input {
+    padding: 20px 10px;
+    background: #211A16;
+    border-radius: 8px;
+    width: 342px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid transparent;
+    color: white;
+}
+.order-form-button {
+    width: 344px;
+    height: 62px;
+}
+
+.footer {
+    padding: 60px 0;
+}
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-rights {
+    font-size: 16px;
+    line-height: 29px;
+}
